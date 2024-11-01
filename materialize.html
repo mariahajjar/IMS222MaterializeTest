@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Materialize With Maria</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="styles.css">
+     
+    </head>
+    
+    <body>
+        <header>
+    
+            <div class = "navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Coffee</a>
+                <a href="content.html">Social Media's Impact</a>
+                <a href="materialize.html">Materialize</a>
+            </div>
+            
+            </header>
+           <!-- Text and Background -->
+   <div class="container">
+    <h4 class="center-align">Welcome to Maria's Golden Arabica Cafe</h4>
+    <p class="flow-text">Maria's cafe includes limited-time items and great deals.</p>
+</div>
+
+
+<!-- Menu -->
+<div class="container">
+    <h4>Menu</h4>
+   <a href="https://unsplash.com/s/photos/latte" class="waves-effect waves-light btn">Lattes</a>
+    <a href="https://unsplash.com/s/photos/turkish-coffee" class="waves-effect waves-light btn-large">Turkish Coffee</a>
+</div>
+
+
+<!-- Cards -->
+<div class="container">
+    <h4>Other Options</h4>
+    <div class="card">
+        <div class="card-image">
+            <img src="images/chocolate chip.png" alt="Sweets">
+            <span class="card-title">Vegan and Vegetarian Sweets</span>
+        </div>
+        <div class="card-content">
+            <p>Enjoy a variety of non-dairy products and alternatives</p>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- Tables -->
+<div class="container">
+    <h4>Menu Board</h4>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cafe du Lait</td>
+                <td>Coffee with Milk or Almondmilk</td>
+                <td>$4.75</td>
+            </tr>
+            <tr>
+                <td>Turkish Coffee</td>
+                <td>Arabica Coffee Grounds</td>
+                <td>$3.75</td>
+            </tr>
+            <tr>
+                <td>Traditional Latte</td>
+                <td>Latte</td>
+                <td>$3.50</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Deals -->
+<div class="container">
+    <h4>Limited-Time Offers</h4>
+    <div class="card-panel teal lighten-2">
+        <span class="white-text">Pumpkin Spice Latte, Caramel Vanilla Latte (With regular or vegan milk).</span>
+    </div>
+</div>
+
+
+<!-- Images -->
+<div class="container">
+    <h4>Our Delights</h4>
+    <div class="row">
+        <div class="col s12 m6">
+            <img src="images/bagels.png" alt="Treat1" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 m6">
+            <img src="images/shortbread.png" alt="Treat2" class="responsive-img materialboxed">
+        </div>
+    </div>
+</div>
+
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+    });
+</script> 
+    
+    </body>
+</html>
